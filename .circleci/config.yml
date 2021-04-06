@@ -7,8 +7,9 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - run: 
-          python main.py
+      - run: python main.py
+      - run:
+          name: Clone docs
           working_directory: ~/circleci-python
           command: |
             git clone --depth 1 https://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@github.com/nickg100/docs.git
