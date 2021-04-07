@@ -12,7 +12,7 @@ jobs:
           name: Clone docs
           working_directory: ~/circleci-python
           command: |
-            git clone --depth 1 https://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:x-oauth-basic@github.com/nickg100/docs.git
+            git clone --depth 1 https://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:x-oauth-basic@github.com/nickg100/docs.git
       - deploy:
           name: Trigger docs deployment
           working_directory: ~/circleci-python
@@ -22,7 +22,7 @@ jobs:
             git config user.name "nickg100"
             git commit --allow-empty -m "Trigger deployment"
             # Push quietly to prevent showing the token in log
-            git push -q https://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:x-oauth-basic@github.com/nickg100/docs.git master
+            git push -q https://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:x-oauth-basic@github.com/nickg100/docs.git master
 
   test:
     working_directory: ~/circleci-python
